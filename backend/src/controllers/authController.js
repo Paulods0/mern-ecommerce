@@ -2,6 +2,7 @@ const { hashPassword, comparePassword } = require("../helpers/authHelper")
 const UserModel = require("../models/UserModel")
 const User = require("../models/UserModel")
 const jwt = require("jsonwebtoken")
+const let initialNum = 0
 
 const registerController = async (req, res) => {
   const { name, password, email, phone, address, answer } = req.body
